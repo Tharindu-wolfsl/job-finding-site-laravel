@@ -66,6 +66,7 @@ export default {
             });
             location.reload();
             this.$router.push({path: "/"});
+            this.close();
         },
     },
 }

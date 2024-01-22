@@ -68,6 +68,7 @@ export default {
                     this.$router.push({path: "/user-dashboard"});
                     console.log('***++',this.$router.currentRoute.name)
                     this.currentRoute = this.$router.currentRoute.name;
+                    this.close();
                 }
                 this.login.email = '';
                 this.login.password = '';

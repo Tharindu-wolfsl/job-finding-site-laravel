@@ -66,9 +66,10 @@
 
 <script>
 import Login from "./components/Jobs/Login";
+import Register from "./components/Jobs/Register";
 export default {
     name: "Header",
-    components: {Login},
+    components: {Register, Login},
     data() {
         return {
             login: {
@@ -147,10 +148,10 @@ export default {
             $("#register-modal").modal('show');
         },
         closeLoginModal() {
-            $("#login-modal").modal('close');
+            $("#login-modal").modal('hide');
         },
         closeRegisterModal() {
-            $("#register-modal").modal('close');
+            $("#register-modal").modal('hide');
         }
     }
 }
