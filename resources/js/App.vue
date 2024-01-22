@@ -1,7 +1,7 @@
 <template>
     <div class="app">
-        <Nav/>
-        <h1>App vue</h1>
+<!--        <Nav/>-->
+        <Header/>
         <router-view></router-view>
 <!--        <div class="container-xl mh-100 p-3 my-3 bg-dark text-white -xl">-->
 <!--            <h1>HOME</h1>-->
@@ -11,13 +11,15 @@
 
 <script>
 
-import Nav from './Nav'
+// import Nav from './Nav'
+import Header from "./Header";
 
 export default {
     name: "App",
 
     components: {
-        Nav
+        Header,
+        // Nav
     },
 }
 </script>
